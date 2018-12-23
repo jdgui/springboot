@@ -5,3 +5,4 @@
 - 统一用json返回
 - 异常统一在controller捕获
 - slfj logback
+- 其余细节见项目
