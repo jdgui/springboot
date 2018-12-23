@@ -1,0 +1,25 @@
+server:
+  address: localhost
+  port: 8080
+
+#db
+
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:homework_spring;MODE=MYSQL;DB_CLOSE_DELAY=-1
+    username: root
+    password: 123456
+    type: com.zaxxer.hikari.HikariDataSource
+    schema: classpath:sql/schema.sql
+    data: classpath:sql/data.sql
+
+#mybatis
+mybatis:
+  type-aliases-package: com.jundagui.entity
+
+#spring.datasource.driverClassName = com.mysql.jdbc.Driver
+#spring.datasource.url = jdbc:mysql://localhost:3306/test1?useUnicode=true&characterEncoding=utf-8
+#spring.datasource.username = root
+#spring.datasource.password = root
+
